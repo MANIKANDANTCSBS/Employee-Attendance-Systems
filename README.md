@@ -1,60 +1,59 @@
-⚙️ Setup Instructions
-1️⃣ Clone the repository
+# Welcome to your Project
+
+## Project info
+
+# AttendX 
+
+A React + TypeScript-based attendance tracking application to mark, view, and manage attendance with role-based access and mock seed data.
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+```bash
 git clone <YOUR_REPO_URL>
 cd attendance-tracker-pro-main
 
-2️⃣ Install dependencies
-npm install
-# or
-yarn install
-# or
-pnpm install
 
-3️⃣ Create a .env file (optional, based on .env.example)
+Install dependencies
+
+npm install
+
+
+Setup environment variables
+
 cp .env.example .env
 
 🏃 How to Run
-📌 Development Mode
+Development
 npm run dev
 
-
-Open the URL shown in the terminal (http://localhost:5173).
-
-📌 Build for Production
+Production Build
 npm run build
 npm run preview
 
-🔐 Seed Users (Demo Login Credentials)
-Role	Email	Password
-Employee	john@company.com
-	password123
-Manager	sarah@company.com
-	password123
 
-Mock attendance is auto-generated when the app starts.
+🔐 Environment Variables
 
-🌱 Seed Data Location
 
-Users: src/stores/authStore.ts → mockUsers
+| Variable           | Description                    |
+| ------------------ | ------------------------------ |
+| VITE_APP_NAME      | Application name               |
+| VITE_API_BASE_URL  | Optional API base URL          |
+| VITE_USE_MOCK_DATA | Enable mock seed data (`true`) |
 
-Attendance: src/stores/attendanceStore.ts → generateMockData()
 
-Data is persisted in LocalStorage using Zustand
 
-🔑 Environment Variables
-
-Create a .env file in root (optional):
+.env.example
 
 VITE_APP_NAME=Attendance Tracker Pro
 VITE_API_BASE_URL=
 VITE_USE_MOCK_DATA=true
 
 
-
 📸 Screenshots
-
-Add your own screenshots in the /screenshots folder.
-
 ![Login](./screenshots/login.png)
 ![Dashboard](./screenshots/dashboard.png)
-![Team Calendar](./screenshots/calendar.png)
+![Attendance Marking](./screenshots/mark-attendance.png)
+![Reports](./screenshots/reports.png)
