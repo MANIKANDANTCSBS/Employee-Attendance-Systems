@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+⚙️ Setup Instructions
+1️⃣ Clone the repository
+git clone <YOUR_REPO_URL>
+cd attendance-tracker-pro-main
 
-## Project info
+2️⃣ Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
 
-**URL**: https://lovable.dev/projects/691924a0-8a24-4243-80e8-da764d76d83e
+3️⃣ Create a .env file (optional, based on .env.example)
+cp .env.example .env
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/691924a0-8a24-4243-80e8-da764d76d83e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🏃 How to Run
+📌 Development Mode
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open the URL shown in the terminal (http://localhost:5173).
 
-**Use GitHub Codespaces**
+📌 Build for Production
+npm run build
+npm run preview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🔐 Seed Users (Demo Login Credentials)
+Role	Email	Password
+Employee	john@company.com
+	password123
+Manager	sarah@company.com
+	password123
 
-## What technologies are used for this project?
+Mock attendance is auto-generated when the app starts.
 
-This project is built with:
+🌱 Seed Data Location
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Users: src/stores/authStore.ts → mockUsers
 
-## How can I deploy this project?
+Attendance: src/stores/attendanceStore.ts → generateMockData()
 
-Simply open [Lovable](https://lovable.dev/projects/691924a0-8a24-4243-80e8-da764d76d83e) and click on Share -> Publish.
+Data is persisted in LocalStorage using Zustand
 
-## Can I connect a custom domain to my Lovable project?
+🔑 Environment Variables
 
-Yes, you can!
+Create a .env file in root (optional):
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+VITE_APP_NAME=Attendance Tracker Pro
+VITE_API_BASE_URL=
+VITE_USE_MOCK_DATA=true
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+
+📸 Screenshots
+
+Add your own screenshots in the /screenshots folder.
+
+![Login](./screenshots/login.png)
+![Dashboard](./screenshots/dashboard.png)
+![Team Calendar](./screenshots/calendar.png)
