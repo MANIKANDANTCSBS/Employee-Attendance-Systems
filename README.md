@@ -53,7 +53,7 @@ VITE_USE_MOCK_DATA=true
 
 
 📸 Screenshots
-![Login](./screenshots/login.png)
-![Dashboard](./screenshots/dashboard.png)
-![Attendance Marking](./screenshots/mark-attendance.png)
-![Reports](./screenshots/reports.png)
+![Login](./screenshots/login.png)(https://drive.google.com/file/d/1M3HHaDnLIDF944JXe1SQuvV_GUJBD7Jd/view?usp=sharing)
+![Dashboard](./screenshots/dashboard.png)(https://drive.google.com/file/d/1zJxReCpbaH6fOVoER6nJJv9gdZQEggQG/view?usp=sharing)
+![Attendance Marking](./screenshots/mark-attendance.png)(https://drive.google.com/file/d/1B_4kGxMUWrezp_gkwzxRAx9hHAy7W0OR/view?usp=sharing)
+![Reports](./screenshots/reports.png)(https://drive.google.com/file/d/1aEKOcgOMRQky7fFm-XtoLDuQULNw44cZ/view?usp=sharing)
